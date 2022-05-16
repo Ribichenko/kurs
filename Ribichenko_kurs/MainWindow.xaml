@@ -132,6 +132,8 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            
+            
         </StackPanel>
         <TextBlock FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="580,0,580,6">
             У Вас уже есть аккаунт?

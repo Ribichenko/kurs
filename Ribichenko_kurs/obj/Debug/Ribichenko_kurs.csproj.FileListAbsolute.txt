@@ -53,3 +53,7 @@ C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs
 C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.csproj.CoreCompileInputs.cache
 C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.exe
 C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.pdb
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\HomeWindow.g.cs
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\HomeWindow.baml
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Profile.g.cs
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Profile.baml
