@@ -34,3 +34,22 @@ D:\Pitch\Ribichenko_kurs\obj\Debug\LogIn.g.cs
 D:\Pitch\Ribichenko_kurs\obj\Debug\LogIn.baml
 D:\Pitch\Ribichenko_kurs\obj\Debug\Sbros.g.cs
 D:\Pitch\Ribichenko_kurs\obj\Debug\Sbros.baml
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\bin\Debug\Ribichenko_kurs.exe.config
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\bin\Debug\Ribichenko_kurs.exe
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\bin\Debug\Ribichenko_kurs.pdb
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.csproj.AssemblyReference.cache
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\LogIn.g.cs
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\MainWindow.g.cs
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Sbros.g.cs
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\App.g.cs
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs_MarkupCompile.cache
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs_MarkupCompile.lref
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\LogIn.baml
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\MainWindow.baml
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Sbros.baml
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.g.resources
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.Properties.Resources.resources
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.csproj.GenerateResource.cache
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.csproj.CoreCompileInputs.cache
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.exe
+C:\Users\не я\Documents\GitHub\kurs\Ribichenko_kurs\obj\Debug\Ribichenko_kurs.pdb
