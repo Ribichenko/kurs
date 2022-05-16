@@ -75,12 +75,20 @@
             <Button x:Name="sbros_button" HorizontalAlignment="Center" Margin="0,30,0,0" Padding="30,0,0,0" FontSize="30" FontWeight="Bold" BorderBrush="#003483" MinHeight="67" MinWidth="400" Background="#2DA0E1" Content="Отправить" Foreground="White" Click="sbros_button_Click" Width="370" Height="59">
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}" >
-                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10">
+                        <Border x:Name="rew" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10">
                             <Border.Background>
                                 <Brush>#00BE41</Brush>
                             </Border.Background>
                             <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="rew" Property="Background" Value="#006D25"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="rew" Property="Background" Value="#003D15"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
