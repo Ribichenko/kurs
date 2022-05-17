@@ -13,12 +13,51 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="83"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-       
-        <StackPanel Grid.Row="1" Background="Green"></StackPanel>
-        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1">
+        <Grid Background="#003483">
+            <Image Grid.Row="0" Grid.Column="0" Source="logo.png" Width="60"></Image>
+        </Grid>
+        <StackPanel Grid.Row="1" Background="#dee5ef">
+            <RadioButton Content="Ассортимент"
+                             Height="50"
+                             Foreground="Black"
+                             FontWeight="Black"
+                             FontSize="20"
+                               Margin="30,30,30,0"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked" />
+
+
+            <RadioButton Content="Сотрудники"
+                             Height="50"
+                          
+                              Foreground="Black" 
+                             FontWeight="Black"
+                             FontSize="20"
+                           Margin="30,30,30,0"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1" />
+
+
+
+            <RadioButton Content="Заказы"
+                             Height="50"
+                         
+                             Foreground="Black" 
+                             FontWeight="Black"
+                             FontSize="20"
+                             Margin="30,30,30,0"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"/>
+
+            <RadioButton Content="Поставщики"
+                             Height="50"
+                             Margin="30"
+                             Foreground="Black" 
+                             FontWeight="Black"
+                             FontSize="20"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_3" />
+        </StackPanel>
+        <StackPanel Background="#003483" Orientation="Vertical" Grid.Row="0" Grid.Column="1">
             <StackPanel Grid.Row="0" Grid.Column="1" Background="Transparent" Orientation="Horizontal" HorizontalAlignment="Right">
                 <Button x:Name="Button_Sver" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Height="20" Width="40"  Click="Button_Sver_Click" Margin="0,0,0,0">
                     <Button.Template>
@@ -53,17 +92,17 @@
                     </Button.Template>
                 </Button>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" Height="60">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" Height="62">
                 <Button Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="Button_Click">
                     <Grid Height="60" Width="250">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="60"></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Border CornerRadius="40">
-                            <Image Source="/img/logo.png"/>
+                        <Border CornerRadius="30"  Background="Gray">
+                            <Image Width="50" Source="/img/login.png"/>
                         </Border>
-
+                        <TextBlock x:Name="NickName" Grid.Column="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Text="{Binding User.Name}"/>
                     </Grid>
                 </Button>
                 

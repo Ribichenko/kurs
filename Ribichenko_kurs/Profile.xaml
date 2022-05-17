@@ -19,7 +19,7 @@
         <TextBlock Text="Name" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0"></TextBlock>
         <StackPanel Grid.Column="1" Orientation="Vertical" Width="500" Height="500" HorizontalAlignment="Left">
             <TextBlock Text="Имя" FontSize="28" Width="80" Foreground="Black" Margin="0,0,200,0"></TextBlock>
-            <TextBox   Margin="0,0,0,0" Padding="0,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" Height="50" Width="300">
+            <TextBox x:Name="NameTb"  Margin="0,0,0,0" Padding="0,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" Height="50" Width="300" Text="{Binding User.Name}">
                 <TextBox.Template>
                     <ControlTemplate>
                         <Border x:Name="border1" CornerRadius="10"
@@ -30,7 +30,7 @@
                 </TextBox.Template>
             </TextBox>
             <TextBlock Text="Email" FontSize="28" Width="80" Foreground="Black" Margin="0,0,200,0"></TextBlock>
-            <TextBox  Margin="0,0,0,0" Padding="0,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" Height="50" Width="300">
+            <TextBox  x:Name="EmailTb" Margin="0,0,0,0" Padding="0,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" Height="50" Width="300" Text="{Binding User.Email}">
                 <TextBox.Template>
                     <ControlTemplate>
                         <Border x:Name="border1" CornerRadius="10"
@@ -41,7 +41,7 @@
                 </TextBox.Template>
             </TextBox>
             <TextBlock Text="Телефон" FontSize="28" Width="120" Foreground="Black" Margin="0,0,180,0"></TextBlock>
-            <TextBox   Margin="0,0,0,0" Padding="0,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" Height="50" Width="300">
+            <TextBox  x:Name="PhoneTb"  Margin="0,0,0,0" Padding="0,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" Height="50" Width="300" Text="{Binding User.PhoneNumber}">
                 <TextBox.Template>
                     <ControlTemplate>
                         <Border x:Name="border1" CornerRadius="10"
@@ -52,7 +52,7 @@
                 </TextBox.Template>
             </TextBox>
             <TextBlock Text="Пароль" FontSize="28" Width="120" Foreground="Black" Margin="0,0,180,0"></TextBlock>
-            <TextBox  Margin="0,0,0,10" Padding="0,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" Height="50" Width="300">
+            <TextBox  x:Name="PasswordTb" Margin="0,0,0,10" Padding="0,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" Height="50" Width="300" Text="{Binding User.Password}">
                 <TextBox.Template>
                     <ControlTemplate>
                         <Border x:Name="border1" CornerRadius="10"
@@ -124,7 +124,7 @@
             Content="Выход"
             FontSize="17"
             Grid.Row="2"
-            Margin="20,0,0,20" Click="btnPass_click">
+            Margin="20,0,0,20" Click="btnEXit_click">
             <Button.Style>
                 <Style TargetType="Button" >
                     <Setter Property="Foreground" Value="#a0a0a0"/>

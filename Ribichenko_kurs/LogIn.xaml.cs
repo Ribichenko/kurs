@@ -35,9 +35,34 @@ namespace Ribichenko_kurs
 
         private void login_button_Click(object sender, RoutedEventArgs e)
         {
-            LogIn min2 = new LogIn();
-            min2.Show();
-            Close();
+            if (LoginTb.Text.Trim() == "Admin" && PasswordTb.Text == "AdminKet11" || LoginTb.Text.Trim() == "Admin@mail.ru" && PasswordTb.Text == "AdminKet11")
+            {
+                HomeWindow admin = new HomeWindow(Log(LoginTb.Text.Trim(), PasswordTb.Text.Trim()).Id_user);
+                admin.Show();
+                Close();
+            }
+            else
+            {
+
+                bool successLogin = Logining(LoginTb.Text.Trim(), PasswordTb.Text.Trim());
+                MessageBox.Show(successLogin ? "Вы вошли в систему" : "Зарегистрируйтесь");
+                if (successLogin == true)
+                {
+                    UserWindow main = new UserWindow(Log(LoginTb.Text.Trim(), PasswordTb.Text.Trim()).Id_user);
+                    main.Show();
+                    Close();
+                }
+
+            }
+          
+        }
+        public bool Logining(string email, string pass)
+        {
+            return TovarEntities.GetContext().Users.Any(p => p.Email == email && p.Password == pass);
+        }
+        public User Log(string email, string pass)
+        {
+            return TovarEntities.GetContext().Users.FirstOrDefault(p => p.Email == email && p.Password == pass);
         }
         private void reg_link_Click(object sender, RoutedEventArgs e)
         {

@@ -59,7 +59,7 @@
             <Label Margin="0,50,0,30" Content="Авторизация" HorizontalAlignment="Center" FontFamily="Arial" FontSize="56" Width="346"/>
             <DockPanel>
                 <Image x:Name="img" Source="/img/email.png" Margin="500,0,0,0" Height="30" Width="30"/>
-                <TextBox x:Name="reg_mail" Margin="-524,5,5,5" Padding="50,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" MinHeight="67" MinWidth="400">
+                <TextBox x:Name="LoginTb" Margin="-524,5,5,5" Padding="50,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" MinHeight="67" MinWidth="400">
                     <TextBox.Template>
                         <ControlTemplate>
 
@@ -73,7 +73,7 @@
             </DockPanel>
             <DockPanel>
                 <Image Margin="500,0,0,0" Height="30" Width="30" Source="/img/pass.png"/>
-                <TextBox x:Name="reg_pass" Margin="-524,5,5,5" Padding="50,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" MinHeight="67" MinWidth="400">
+                <TextBox x:Name="PasswordTb" Margin="-524,5,5,5" Padding="50,0,0,0" HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="34" MinHeight="67" MinWidth="400">
                     <TextBox.Template>
                         <ControlTemplate>
                             <Border x:Name="border" CornerRadius="10"

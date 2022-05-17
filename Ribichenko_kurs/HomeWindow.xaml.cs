@@ -19,14 +19,21 @@ namespace Ribichenko_kurs
     /// </summary>
     public partial class HomeWindow : Window
     {
+        private int id;
         public HomeWindow()
         {
             InitializeComponent();
         }
+        public HomeWindow(int Id_user)
+        {
+            InitializeComponent();
+            id = Id_user;
+            NickName.Text = TovarEntities.GetContext().Users.FirstOrDefault(p => p.Id_user == id).Name;
+        }
 
         private void Button_Close_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            Application.Current.Shutdown();
         }
 
 
@@ -37,7 +44,27 @@ namespace Ribichenko_kurs
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new Profile());
+            MainFrame.Navigate(new Profile(id , this));
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new AAssort());
+        }
+
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Employ());
+        }
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Records());
+        }
+
+        private void RadioButton_Checked_3(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new TheSupplier());
         }
     }
 }

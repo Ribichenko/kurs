@@ -33,10 +33,19 @@ namespace Ribichenko_kurs
         
         private void reg_button_Click(object sender, RoutedEventArgs e)
         {
-            LogIn min2 = new LogIn();
-            min2.Show();
-            Close();
-        }
+            bool canRegister = TovarEntities.GetContext().Users.All(p => p.Email != EmailTb.Text.Trim());
+            if (canRegister)
+            {
+                TovarEntities.GetContext().Users.Add(new User {Name = NameTb.Text.Trim(), Email = EmailTb.Text.Trim(), Password = PasswordTb.Text.Trim() , PhoneNumber = PhoneTb.Text.Trim() });
+                TovarEntities.GetContext().SaveChanges();
+
+                System.Windows.MessageBox.Show("Вы прошли регистрацию");
+
+                LogIn min2 = new LogIn();
+                min2.Show();
+                Close();
+                }
+            }
         private void reg_link_Click(object sender, RoutedEventArgs e)
         {   
             LogIn min2 = new LogIn();
